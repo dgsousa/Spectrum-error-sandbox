@@ -1,24 +1,45 @@
-import logo from './logo.svg';
+import React from 'react';
+import {
+  Provider,
+  defaultTheme,
+  Content,
+  Text,
+} from '@adobe/react-spectrum';
+import {
+  Tabs,
+  Item,
+} from '@react-spectrum/tabs';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Provider theme={ defaultTheme } colorScheme='dark'>
+    <div
+      style={ {
+        width: '150px',
+        marginBottom: '50px',
+        height: '150px',
+        maxWidth: '100%',
+      } }>
+      <Tabs aria-label='Chat log collapse example'>
+        <Item title='John Doe' key='item1'>
+          <Content marginTop='size-250' marginStart='size-125'>
+            <Text>There is no prior chat history with John Doe.</Text>
+          </Content>
+        </Item>
+        <Item title='Jane Doe' key='item2'>
+          <Content marginTop='size-250' marginStart='size-125'>
+            <Text>There is no prior chat history with Jane Doe.</Text>
+          </Content>
+        </Item>
+        <Item title='Joe Bloggs' key='item3'>
+          <Content marginTop='size-250' marginStart='size-125'>
+            <Text>There is no prior chat history with Joe Bloggs.</Text>
+          </Content>
+        </Item>
+      </Tabs>
     </div>
+  </Provider>
   );
 }
 
