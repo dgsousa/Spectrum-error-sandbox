@@ -4,10 +4,12 @@
   "private": true,
   "dependencies": {
     "@adobe/react-spectrum": "^3.9.0",
+    "@react-spectrum/provider": "^3.1.3",
     "@react-spectrum/tabs": "^3.0.0-beta.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "pnp-webpack-plugin": "github:itaylor/pnp-webpack-plugin#985524eb04535a50bd9d60abe11f5727bf667977",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",

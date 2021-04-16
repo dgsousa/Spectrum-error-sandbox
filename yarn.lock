@@ -12762,12 +12762,12 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"pnp-webpack-plugin@npm:1.6.4":
+"pnp-webpack-plugin@github:itaylor/pnp-webpack-plugin#985524eb04535a50bd9d60abe11f5727bf667977, pnp-webpack-plugin@npm:1.6.4":
   version: 1.6.4
-  resolution: "pnp-webpack-plugin@npm:1.6.4"
+  resolution: "pnp-webpack-plugin@https://github.com/itaylor/pnp-webpack-plugin.git#commit=985524eb04535a50bd9d60abe11f5727bf667977"
   dependencies:
     ts-pnp: ^1.1.6
-  checksum: 39a484182f8fc08cb1420d4a5ccf16457c6498a4546bfbad9e00df7238ba7d98796e9aa6f82a4e803a627860409ffed491a55c5a1384e09bed60cefeb618586d
+  checksum: 091df134e032607263d8473f83abf006494d9061aeedfaeab7e079e7c93783a67af5e3d2fce73b85a35bd7354088cafe0356281803e6d9059a14d9249bff4e08
   languageName: node
   linkType: hard
 
@@ -14765,10 +14765,12 @@ resolve@1.18.1:
   resolution: "sandbox2@workspace:."
   dependencies:
     "@adobe/react-spectrum": ^3.9.0
+    "@react-spectrum/provider": ^3.1.3
     "@react-spectrum/tabs": ^3.0.0-beta.0
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^11.1.0
     "@testing-library/user-event": ^12.1.10
+    pnp-webpack-plugin: "github:itaylor/pnp-webpack-plugin#985524eb04535a50bd9d60abe11f5727bf667977"
     react: ^17.0.2
     react-dom: ^17.0.2
     react-scripts: 4.0.3
